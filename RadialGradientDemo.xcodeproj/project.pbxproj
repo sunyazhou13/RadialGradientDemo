@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		3FCC46A4294355A200886ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC46A2294355A200886ABB /* Main.storyboard */; };
 		3FCC46A6294355A400886ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC46A5294355A400886ABB /* Assets.xcassets */; };
 		3FCC46A9294355A400886ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC46A7294355A400886ABB /* LaunchScreen.storyboard */; };
+		DA11FDDD709872186C628B8E /* Pods_RadialGradientDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1DF8FFA8AAB1F82E482C45 /* Pods_RadialGradientDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1DF8FFA8AAB1F82E482C45 /* Pods_RadialGradientDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadialGradientDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCC4699294355A200886ABB /* RadialGradientDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadialGradientDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCC469C294355A200886ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCC469E294355A200886ABB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3FCC46A5294355A400886ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCC46A8294355A400886ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FCC46AA294355A400886ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560A8B42DCFC50A754696DCA /* Pods-RadialGradientDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadialGradientDemo.release.xcconfig"; path = "Target Support Files/Pods-RadialGradientDemo/Pods-RadialGradientDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8D114A5A281C9ABF1A42395F /* Pods-RadialGradientDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadialGradientDemo.debug.xcconfig"; path = "Target Support Files/Pods-RadialGradientDemo/Pods-RadialGradientDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA11FDDD709872186C628B8E /* Pods_RadialGradientDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8E532B5C1EA29A2FF83BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D114A5A281C9ABF1A42395F /* Pods-RadialGradientDemo.debug.xcconfig */,
+				560A8B42DCFC50A754696DCA /* Pods-RadialGradientDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3FCC4690294355A200886ABB = {
 			isa = PBXGroup;
 			children = (
 				3FCC469B294355A200886ABB /* RadialGradientDemo */,
 				3FCC469A294355A200886ABB /* Products */,
+				2E8E532B5C1EA29A2FF83BEA /* Pods */,
+				C11562AE7DC83A79189E5F16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = RadialGradientDemo;
 			sourceTree = "<group>";
 		};
+		C11562AE7DC83A79189E5F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DF8FFA8AAB1F82E482C45 /* Pods_RadialGradientDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FCC46AD294355A400886ABB /* Build configuration list for PBXNativeTarget "RadialGradientDemo" */;
 			buildPhases = (
+				C8E014B8DD5A0E2F7DAF63E7 /* [CP] Check Pods Manifest.lock */,
 				3FCC4695294355A200886ABB /* Sources */,
 				3FCC4696294355A200886ABB /* Frameworks */,
 				3FCC4697294355A200886ABB /* Resources */,
+				A4EC575318AAF36823E2C341 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = 3FCC4694294355A200886ABB /* Build configuration list for PBXProject "RadialGradientDemo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4EC575318AAF36823E2C341 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadialGradientDemo/Pods-RadialGradientDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadialGradientDemo/Pods-RadialGradientDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadialGradientDemo/Pods-RadialGradientDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E014B8DD5A0E2F7DAF63E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadialGradientDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FCC4695294355A200886ABB /* Sources */ = {
@@ -282,11 +350,13 @@
 		};
 		3FCC46AE294355A400886ABB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D114A5A281C9ABF1A42395F /* Pods-RadialGradientDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G33MN8M2BW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RadialGradientDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,11 +380,13 @@
 		};
 		3FCC46AF294355A400886ABB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 560A8B42DCFC50A754696DCA /* Pods-RadialGradientDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G33MN8M2BW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RadialGradientDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
